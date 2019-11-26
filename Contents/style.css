@@ -1,0 +1,442 @@
+/* recherche avancée/hotel recherché apparait/disparait */
+#rechercheAvancee{
+	display: none;
+}
+#hotelRecherche{
+	display: none;
+}
+
+.forum ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.forum li {
+  flex : 1 1 15vw;
+  height: 40px;
+  /*border : 1px solid black;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.forum li a {
+  /*width : 20vw;*/
+  background-color: aliceblue;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 25px;
+  /*margin: 0 auto;*/
+}
+.forum li a:hover {
+   background-color: skyblue;
+   border: 3px double salmon;
+   border-radius: 20px;
+}
+
+body{
+  margin: 0;
+  background-color: aliceblue;
+}
+
+/* ------------------------------------- *//*Navgation*/
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: skyblue;
+  color: salmon;
+  border-top: 3px double salmon; 
+  border-bottom: 3px double salmon; 
+}
+
+.navigation {
+  float: left;
+  margin: 0;
+
+}
+
+.navigation a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: salmon;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background-color: deepskyblue;
+}
+
+#profil{
+	float: right;
+	padding: 14px 16px;
+}
+/* ------    css pour étoiles recherche avancé-------	*/
+#blocStar{
+    float: left;
+    margin-top: 5%;
+}
+
+.rate {
+    float: right;   
+    padding: 0 10px;
+    margin-right: 65px; 
+    margin-top: -45px; 
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+.avancedSearch{
+    border: 2px solid black;
+}
+#avancedSearch td{
+    padding-left: 10px;
+    width: 15%;
+}
+
+.containerLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Connecter{
+ border: 1px solid black;
+ background-color:skyblue;
+ border: 3px double salmon;
+ color: navy;
+ width: 175px;
+ padding:5px;
+ padding-right: 15px;
+}
+#ou{
+  color: navy;
+  margin-top: 230px;
+}
+
+
+.inputFix{
+  width:99%;
+   margin:5px;
+}
+
+.inputLogin{
+  margin:5px;
+}
+
+.buttonLogin{
+  text-align: center;
+}
+
+.roomImg{
+    width: 500px;
+    height: auto;
+}
+
+
+/*Page user profile*/
+#formUserProfile > input{
+  margin-top: 10px;
+}
+/*----HISTORIQUE USER------------------------*/
+
+
+.itemGrow{
+  flex-grow:1;
+  height:50px;
+  margin:25px;
+}
+
+#userProfile{
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 30px;
+  color: navy;
+}
+
+#tableUserProfile{
+  margin: 0 auto;
+  margin-top: 30px;
+  color: navy;
+}
+
+/*----HISTORIQUE USER------------------------*/
+
+a
+{
+  color: salmon;
+  text-decoration: none;
+}
+
+#historicUser{
+  margin: 60px auto;
+  padding: 30px; 
+  width: 40%;
+  text-align: center;
+  background-color: skyblue;
+  border: 3px double salmon;
+}
+#historicUser h2{
+  color: navy;
+}
+#historicUser .tableHistoricUser, .tableHistoricUser td{
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid salmon;
+  color: navy;
+}
+/*------Contact--------------------------------*/
+.contactStar{
+  color: #ffc700;  
+}
+#contact{
+  background-color: lightskyblue;
+  margin: 50px;
+  width: 1100px;
+  height: 900px;
+  padding: 30px;
+}
+#affichageTableHostels{
+  margin: 0 auto;
+  border: 3px double salmon;
+}
+
+/* ------css pour open street map-------*/ 
+#mapid{
+  margin: 0 auto;
+  height: 500px;
+  width: 900px;
+  margin-top: 30px;
+  border: 3px double salmon;
+}
+input{
+  background-color: aliceblue;
+}
+
+  
+.msg {
+  border-radius: 10px;
+  padding : 10px;
+}
+
+.msg > p:nth-child(2){
+  font-style: italic;
+  color : white;
+}
+
+.bgc-odd{
+  background-color: tomato;
+}
+.bgc-even{
+  background-color: salmon;
+}
+.msgs {
+  margin : 10px;
+  background-color: lightgrey;
+}
+
+
+.jo{
+  background-color:;
+height: 85px;
+margin: 25px
+border-radius: 10px;
+}
+
+.content a:hover {
+   color: salmon;
+   border-radius: 20px;
+}
+
+
+.box {
+    background: #2db34a;
+    border-radius: 6px;
+    transition-property: background, border-radius;
+    transition-duration: .2s, 1s;
+    transition-timing-function: linear;
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+.box:hover {
+  background: #ff7b29;
+  border-radius: 50%;
+}
+
+
+/*.h2-msg h2{
+    text-align: center;
+    background-color: lightpink;
+    width: 100px;
+    margin: 0 auto;
+}
+.h2-msg h2:hover{
+   border-radius: 50%;
+
+  -webkit-transition-property: border-radius;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+ 
+    transition-property: background, border-radius;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.h2-msg:hover{
+  color: red;
+  font-weight: bold;
+  
+
+  
+
+/* Sidenav fixe, pleine hauteur */
+ .sidenav {
+height: 100%;
+width: 127px;
+position: fixed;
+z-index: 1;
+top: 49px;
+left: 0;
+overflow-x: hidden;
+padding-top: 78px;
+background-color: skyblue;
+color: salmon;
+border-right: 3px double salmon;
+  }
+  
+  /* Style les liens sidenav et le bouton déroulant*/
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    background-color: azure;
+border-color: blue;
+border: 1px;
+border-style: solid;
+margin-bottom: 5px;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+  }
+  
+  /* Main content */
+  .main, .title {
+    margin-left: 200px; /* Identique à la largeur du sidenav */
+    padding: 24px 10px;
+  }
+  .main {
+    overflow-y: scroll; 
+    height:85vh;
+  }
+  
+  /* Ajouter une classe active au bouton déroulant actif */
+  .active {
+    background-color: antiquewhite;
+    color: black;
+  }
+  
+  /* Conteneur déroulant (masqué par défaut). Facultatif: ajoutez une couleur de fond plus claire et un peu de remplissage à gauche pour modifier la conception du contenu de la liste déroulante */
+  .dropdown-container {
+    display: none;
+    background-color: grey;
+    padding-left: 8px;
+  }
+  
+  /* Facultatif: Style de l'icône d'insertion */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  } 
+  .title{
+    text-align: center;
+  color: tomato;
+  text-transform: uppercase;
+  }
+  
+  #table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #table tr:hover {background-color: #ddd;}
+  
+  #table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: grey;
+    color: white;
+  }
+  .td-Textcenter{
+    text-align: center;
+  }
+  
+  .container{
+    width : 100%;
+    height : 85vh;
+    position : fixed;
+    bottom : 0;
+    padding-bottom : 20px;
+  
+  }
+  #navigation {
+    margin : 0;
+    width : 100%;
+    position: fixed;
+    top :0;
+  }
+  body{
+    margin : 0;
+  }
